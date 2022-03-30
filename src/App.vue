@@ -13,6 +13,8 @@
   </header>
   <body>
     <ImageCards/>
+    <br>
+    <TwoWayBinding/>
   </body>
 </html>
 </template>
@@ -20,11 +22,13 @@
 <script>
 import NavBar from "./components/NavBar.vue";
 import ImageCards from "./components/ImageCards.vue";
+import TwoWayBinding from "./components/TwoWayBinding.vue";
 export default {
   name: "App",
   components: {
     NavBar,
-    ImageCards
+    ImageCards,
+    TwoWayBinding
   }
 };
 </script>
@@ -38,6 +42,7 @@ export default {
 
 body {
   font-family: "montserrat", sans-serif;
+  text-align: center;
 }
 
 header {
