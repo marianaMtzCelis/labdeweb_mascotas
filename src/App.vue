@@ -19,6 +19,8 @@
     <SlidersPets/>
     <br>
     <DogBreeds/>
+    <br>
+    <DisappearEmojis/>
   </body>
 </html>
 </template>
@@ -29,6 +31,7 @@ import ImageCards from "./components/ImageCards.vue";
 import TwoWayBinding from "./components/TwoWayBinding.vue";
 import SlidersPets from "./components/SlidersPets.vue";
 import DogBreeds from "./components/DogBreeds.vue";
+import DisappearEmojis from "./components/DisappearEmojis.vue";
 export default {
   name: "App",
   components: {
@@ -36,7 +39,8 @@ export default {
     ImageCards,
     TwoWayBinding,
     SlidersPets,
-    DogBreeds
+    DogBreeds,
+    DisappearEmojis
   }
 };
 </script>
