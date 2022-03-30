@@ -55,6 +55,7 @@ export default {
 body {
   font-family: "montserrat", sans-serif;
   text-align: center;
+  background-color: #b8e3ff;
 }
 
 header {
