@@ -17,6 +17,8 @@
     <TwoWayBinding/>
     <br>
     <SlidersPets/>
+    <br>
+    <DogBreeds/>
   </body>
 </html>
 </template>
@@ -26,13 +28,15 @@ import NavBar from "./components/NavBar.vue";
 import ImageCards from "./components/ImageCards.vue";
 import TwoWayBinding from "./components/TwoWayBinding.vue";
 import SlidersPets from "./components/SlidersPets.vue";
+import DogBreeds from "./components/DogBreeds.vue";
 export default {
   name: "App",
   components: {
     NavBar,
     ImageCards,
     TwoWayBinding,
-    SlidersPets
+    SlidersPets,
+    DogBreeds
   }
 };
 </script>
