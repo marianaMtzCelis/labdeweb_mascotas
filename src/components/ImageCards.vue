@@ -1,3 +1,18 @@
+<script>
+export default {
+  data() {
+    let image_counter = 0;
+    return {
+      img_array: [
+        "https://drive.google.com/uc?export=view&id=1vP9Aaj5toBsqRtjvBujipxxX5N_5Fj4X",
+        "https://drive.google.com/uc?export=view&id=1OzQgLC2CiVqw8KwZuW6Q1mRLr3suoMdl"
+      ],
+      image_counter: image_counter
+    };
+  }
+};
+</script>
+
 <template>
 <html>
   <head>
@@ -5,11 +20,7 @@
   </head>
   <body>
     <div class="card">
-      <img
-        src="https://drive.google.com/uc?export=view&id=1vP9Aaj5toBsqRtjvBujipxxX5N_5Fj4X"
-        alt="Avatar"
-        style="width:100%"
-      >
+      <img :src="img_array[image_counter]" alt="Avatar" style="width:100%;">
       <div class="container">
         <h4>
           <b>Nala</b>
@@ -17,12 +28,10 @@
         <p>The most wonderful pet</p>
       </div>
     </div>
+    <button @click="image_counter = (image_counter + 1) % img_array.length;">Change pic!</button>
   </body>
 </html>
 </template>
-
-<script>
-</script>
 
 <style>
 .card {
