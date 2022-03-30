@@ -4,7 +4,7 @@
   <body>
     <div>
       <h2>My favorite dog breeds:</h2>
-      <ul id="example-1" style="list-style: none;">
+      <ul id="example-1">
   <li v-for="item in list" :key="item.breed">
     {{ item.breed }}
   </li>
