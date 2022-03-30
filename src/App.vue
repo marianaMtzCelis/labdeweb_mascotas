@@ -1,26 +1,52 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<html>
+  <div class="jumbotron text-center" style="background-color:#61b0b7;">
+    <br>
+    <h1 style="color:white; text-align:center; margin:15px;">Pets</h1>
+    <p
+      style="color:white; text-align:center; margin:15px;"
+    >Mariana Martínez Celis González A01194953</p>
+    <br>
+  </div>
+  <header>
+    <NavBar/>
+  </header>
+  <body>
+    <ImageCards/>
+  </body>
+</html>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import NavBar from "./components/NavBar.vue";
+import ImageCards from "./components/ImageCards.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    NavBar,
+    ImageCards
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montserrat", sans-serif;
+}
+
+header {
+  width: 100vw;
+  background-color: #16558f;
+  padding: 15px;
+}
+
+jumbotron .text-center {
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
